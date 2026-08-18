@@ -51,8 +51,7 @@ If you use ADBAddons in your code you must follow these rules:
   <summary><b>My Accounts</b></summary>
 	
 
-[![ETH](https://img.shields.io/badge/Tiktok-Open-blue?style=for-the-badge&logo=Tiktok%27)](https://www.tiktok.com/@null.client)
-| GITHUB   | [![LTC](https://img.shields.io/badge/Litecoin-Donate-lightgrey?style=for-the-badge&logo=litecoin)](litecoin:Ld5c7DVKgq7EnCLJs6DhwHi8eLhPYGQtC9) | [Ld5c7DVKgq7EnCLJs6DhwHi8eLhPYGQtC9](litecoin:Ld5c7DVKgq7EnCLJs6DhwHi8eLhPYGQtC9) |
+[![TIKTOK](https://img.shields.io/badge/Tiktok-Open-blue?style=for-the-badge&logo=Tiktok%27)](https://www.tiktok.com/@null.client)
 
 </details>
 
