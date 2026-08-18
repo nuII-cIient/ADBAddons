@@ -10,39 +10,21 @@
 
 ---
 
-# Seralyth Menu  
-<sub>Forked from ii's Stupid Menu</sub>
+# ADBAddons
 
-Seralyth Menu is a **feature-packed** mod menu for Gorilla Tag, built by the community, for the community. Whether you just want mods, are a developer, or anything inbetween, this menu has you covered. Designed to be **as useful as possible**, it includes a variety of features and options that let you customize your modding experience to your heart’s content.  
+ADBAddons is a python package for using ADB commands with your oculus. 
 
 <details>
-  <summary><b>💡 Why open-source?</b></summary>
+  <summary><b>Using ADBAddons</b></summary>
 	
-Great question. The modding community used to be about **sharing, learning, and improving** together. But nowadays, everything’s locked behind **paywalls and obfuscation**. That’s not how it should be.  
-
-By making this menu open-source, I'm giving **everyone** the opportunity to:  
-- Learn how mod menus work 
-- Experiment with new ideas  
-- Contribute to the Gorilla Tag modding scene  
-- ⭐ **Keep modding free and accessible**  
-
-Let's bring back the collaboration of modding. No paywalls, no secrets, no malware, just good mods.  
-
+**(CREDITS)** If you use ADBAddons in your code you must follow these rules:
+- Your project **must** be open-source.  
+- Give credit to ADBAddons somewhere in your description or README.md.
+- Do not use it to harm other peoples devices.
 </details>
 
 <details>
-  <summary><b>❓ Can I use your code?</b></summary>
-	
-**Of course!** But there’s a catch: you gotta play fair. **[GPL-3.0 License](https://www.gnu.org/licenses/gpl-3.0.html) rules apply**, which means that if you use my code:  
-- Your project **must** also be open-source.  
-- Give credit where it's due.
-- No shady stuff.
-- **[Follow the license.](https://www.gnu.org/licenses/gpl-3.0.html)**
-
-</details>
-
-<details>
-  <summary><b>💾 Installation</b></summary>
+  <summary><b>Installation</b></summary>
 	
 1. **Download** the latest release **[here](https://github.com/Seralyth/Seralyth-Menu/releases/latest)**
 2. **Drag & Drop** `Seralyth-Menu.dll` into your plugins folder  
