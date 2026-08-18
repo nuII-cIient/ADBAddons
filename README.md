@@ -37,7 +37,7 @@ If you use ADBAddons in your code you must follow these rules:
   <summary><b>All Commands</b></summary>
 	
 | Command | Args | Description |
-|--|------|------|-------------|
+|---------|------|-------------|
 |CMD|arg: bool, arg2: int|Does this|
 
 
@@ -67,6 +67,5 @@ If you use ADBAddons in your code you must follow these rules:
 > You should have received a copy of the GNU General Public License
 > along with this program.  If not, see <https://www.gnu.org/licenses>.
 
-> This product is not affiliated with Another Axiom Inc. or its videogames Gorilla Tag and Orion Drift and is not endorsed or otherwise sponsored by Another Axiom. Portions of the materials contained herein are property of Another Axiom. ©2021 Another Axiom Inc.
 
 > The names "Seralyth", "Seralyth Software", logos, artwork, and branding are not covered by this license.
