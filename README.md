@@ -17,7 +17,7 @@ ADBAddons is a python package for using ADB commands with your oculus.
 <details>
   <summary><b>Using ADBAddons</b></summary>
 	
-**(CREDITS)** If you use ADBAddons in your code you must follow these rules:
+If you use ADBAddons in your code you must follow these rules:
 - Your project **must** be open-source.  
 - Give credit to ADBAddons somewhere in your description or README.md.
 - Do not use it to harm other peoples devices.
@@ -26,23 +26,15 @@ ADBAddons is a python package for using ADB commands with your oculus.
 <details>
   <summary><b>Installation</b></summary>
 	
-1. **Download** the latest release **[here](https://github.com/Seralyth/Seralyth-Menu/releases/latest)**
-2. **Drag & Drop** `Seralyth-Menu.dll` into your plugins folder  
-3. **Launch** Gorilla Tag and enjoy!
-
-**🧱 From Source Code (for developers!)**
-
-1. Download the source code **[here](https://github.com/Seralyth/Seralyth-Menu/releases/latest)**
-2. Edit `Directory.Build.props` and update `<GamePath>` if your Gorilla Tag is in a custom spot
-3. Build the project with `Ctrl + Shift + B`<Br>
-✅ The DLL will automatically go into your Gorilla Tag plugins folder
+1. Open a Command prompt anywhere on your computer
+2. Run this command `pip install git+https://github.com/yourusername/ADBAddons.git`
 
 </details>
 
 ---
 
 <details>
-  <summary><b>🎛️ System Compatibility</b></summary>
+  <summary><b>All Commands</b></summary>
 	
 | Operating System | Menu | Fonts | Images | Sounds | Videos |
 |------------------|------|--------|--------|--------|--------|
@@ -52,13 +44,6 @@ ADBAddons is a python package for using ADB commands with your oculus.
 |<img src="Resources/GitHub/linux.png" height=20px> Linux|✅|✅|✅|✅|❌|
 
 > ✅ Works as intended ; ⚠️ Semi functional ; ❌ Does not work ; ❓ Untested
-
-</details>
-
-<details>
-  <summary><b>🗣️ Contact Information</b></summary>
-	
-Join our [Discord](https://discord.gg/seralyth)!
 
 </details>
 
