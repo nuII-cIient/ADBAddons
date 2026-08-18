@@ -27,7 +27,7 @@ If you use ADBAddons in your code you must follow these rules:
   <summary><b>Installation</b></summary>
 	
 1. Open a Command prompt anywhere on your computer
-2. Run this command `pip install git+https://github.com/yourusername/ADBAddons.git`
+2. Run this command `pip install git+https://github.com/nuII-cIient/ADBAddons.git`
 
 </details>
 
@@ -48,12 +48,10 @@ If you use ADBAddons in your code you must follow these rules:
 </details>
 
 <details open>
-  <summary><b>💖 Support</b></summary>
+  <summary><b>My Accounts</b></summary>
 	
 
-| Platform   | Link | Address |
-|------------|------|---------|
-| TIKTOK   | [![ETH](https://img.shields.io/badge/Ethereum-Donate-blue?style=for-the-badge&logo=ethereum)](ethereum:0xc14846DF02f45D02a3A5750B21e6e1533ab129Dd) | [0xc14846DF02f45D02a3A5750B21e6e1533ab129Dd](ethereum:0xc14846DF02f45D02a3A5750B21e6e1533ab129Dd) |
+[![ETH](https://img.shields.io/badge/Tiktok-Open-blue?style=for-the-badge&logo=Tiktok%27)](https://www.tiktok.com/@null.client)
 | GITHUB   | [![LTC](https://img.shields.io/badge/Litecoin-Donate-lightgrey?style=for-the-badge&logo=litecoin)](litecoin:Ld5c7DVKgq7EnCLJs6DhwHi8eLhPYGQtC9) | [Ld5c7DVKgq7EnCLJs6DhwHi8eLhPYGQtC9](litecoin:Ld5c7DVKgq7EnCLJs6DhwHi8eLhPYGQtC9) |
 
 </details>
