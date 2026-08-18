@@ -31,8 +31,6 @@ If you use ADBAddons in your code you must follow these rules:
 
 </details>
 
----
-
 <details>
   <summary><b>All Commands</b></summary>
 	
@@ -42,6 +40,10 @@ If you use ADBAddons in your code you must follow these rules:
 
 
 </details>
+
+---
+
+
 
 <details open>
   <summary><b>My Accounts</b></summary>
