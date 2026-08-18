@@ -28,7 +28,7 @@ class ADBAddons:
     def _run_shell(self, command: str) -> str:
         return self._run_command("shell", command)
 
-    def checkForUsb(self) -> bool:
+    def check_for_usb_connection(self) -> bool:
         output = self._run_command("devices")
         devices = []
         for line in output.split('\n')[1:]:
@@ -46,7 +46,7 @@ class ADBAddons:
         )
         return usb_connected
 
-    def wirelessAdbConnect(self, IP: str) -> bool:
+    def connect_adb_wireless(self, IP: str) -> bool:
         address = f"{IP}:5555"
         output = self._run_command("connect", address)
         if "connected" in output.lower() or "already connected" in output.lower():
@@ -54,73 +54,45 @@ class ADBAddons:
             return True
         return False
 
-    def usbAdbConnect(self) -> bool:
+    def connect_adb_usb(self) -> bool:
         self._run_command("kill-server")
         time.sleep(1)
         self._run_command("start-server")
         time.sleep(1)
         return self.checkForUsb()
 
-    def setOculusBattery(self, level: Optional[int] = None, status: Optional[int] = None,
-                         smooth: bool = False, delay: float = 0.1) -> bool:
-        try:
-            if level is not None:
-                if not 0 <= level <= 100:
-                    return False
-                if smooth:
-                    current_output = self._run_shell("dumpsys battery")
-                    current_match = re.search(r'level:\s*(\d+)', current_output)
-                    current_level = int(current_match.group(1)) if current_match else 0
-                    step = 1 if current_level < level else -1
-                    status_to_use = status or (2 if current_level < level else 3)
-                    for lvl in range(current_level, level + step, step):
-                        self._run_shell(f"dumpsys battery set level {lvl}")
-                        if status_to_use:
-                            self._run_shell(f"dumpsys battery set status {status_to_use}")
-                        time.sleep(delay)
-                else:
-                    self._run_shell(f"dumpsys battery set level {level}")
-            if status is not None and not smooth:
-                self._run_shell(f"dumpsys battery set status {status}")
-            return True
-        except Exception:
-            return False
-
-    def setOculusBrightness(self, brightness: int) -> bool:
+    def set_brightness(self, brightness: int) -> bool:
         try:
             if not 0 <= brightness <= 255:
                 return False
-            self._run_shell(f"echo {brightness} > /sys/class/leds/lcd-backlight/brightness")
             self._run_shell(f"settings put system screen_brightness {brightness}")
-            self._run_shell(f"settings put system oculus_brightness {brightness}")
-            self._run_shell(f"echo {brightness} > /sys/class/backlight/panel/brightness")
             return True
         except Exception:
             return False
 
-    def set_status(self, status: int) -> str:
+    def set_battery_led_orange(self) -> str:
+        return self._run_shell(f"dumpsys battery set status 2")
+
+    def set_battery_led_green(self) -> str:
+        return self._run_shell(f"dumpsys battery set status 5")
+
+    def set_battery_charging(self, status: bool) -> str:
+        value = 1 if status else 0
+        return self._run_shell(f"adb shell dumpsys battery set usb {value}")
+
+    def set_battery_status(self, status: int) -> str:
         return self._run_shell(f"dumpsys battery set status {status}")
 
-    def set_level(self, level: int) -> str:
-        return self._run_shell(f"dumpsys battery set level {level}")
-
-    def reset(self) -> str:
-        return self._run_shell("dumpsys battery reset")
-
-    def get_status(self) -> str:
+    def get_battery_status(self) -> str:
         return self._run_shell("dumpsys battery")
 
-    def get_controller_battery(self) -> Dict[str, int]:
-        output = self._run_shell("dumpsys OVRRemoteService | grep Paired")
-        controllers = {}
-        right_match = re.search(r'Type:\s+Right.*?Battery:\s+(\d+)%', output)
-        if right_match:
-            controllers['right'] = int(right_match.group(1))
-        left_match = re.search(r'Type:\s+Left.*?Battery:\s+(\d+)%', output)
-        if left_match:
-            controllers['left'] = int(left_match.group(1))
-        return controllers
+    def set_battery_level(self, level: int) -> str:
+        return self._run_shell(f"dumpsys battery set level {level}")
 
+    def reset_battery(self) -> str:
+        return self._run_shell("dumpsys battery reset")
+
+    
     def check_connection(self) -> bool:
         output = self._run_command("devices")
         return "\tdevice" in output
