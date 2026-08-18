@@ -36,14 +36,10 @@ If you use ADBAddons in your code you must follow these rules:
 <details>
   <summary><b>All Commands</b></summary>
 	
-| Operating System | Menu | Fonts | Images | Sounds | Videos |
-|------------------|------|--------|--------|--------|--------|
-|<img src="Resources/GitHub/windows-10.png" height=20px> Windows 10|✅|✅|✅|✅|✅|
-|<img src="Resources/GitHub/windows-11.png" height=20px> Windows 11|✅|✅|✅|✅|✅|
-|<img src="Resources/GitHub/macos.png" height=20px> Mac OS|✅|✅|✅|✅|❌|
-|<img src="Resources/GitHub/linux.png" height=20px> Linux|✅|✅|✅|✅|❌|
+| Command | Args | Description |
+|--|------|------|-------------|
+|CMD|arg: bool, arg2: int|Does this|
 
-> ✅ Works as intended ; ⚠️ Semi functional ; ❌ Does not work ; ❓ Untested
 
 </details>
 
@@ -56,7 +52,6 @@ If you use ADBAddons in your code you must follow these rules:
 </details>
 
 > [!NOTE] 
-> ADB Addons  README.md<br>
 >
 > 
 > This program is free software: you can redistribute it and/or modify
